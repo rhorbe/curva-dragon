@@ -1,0 +1,21 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body h1 {
+  text-align: center;
+  margin: 8px;
+}
+
+#turtlecanvas {
+  background: #fff;
+  border: 1px solid red;
+}
+
+#turtlecanvas,
+#imagecanvas {
+  margin: 20px auto;
+  display: block;
+}
