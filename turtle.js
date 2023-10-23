@@ -17,9 +17,9 @@ color("green");
 forward(150); */
 
 let main = () => {
-  showGrid(50);
+  showGrid(10);
   setSpeed(200);
-  width(5);
+  width(1);
 
   for (let i = 0; i <= 10; i++) {
     color("red");
