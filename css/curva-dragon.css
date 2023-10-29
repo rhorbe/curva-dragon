@@ -4,18 +4,10 @@ html {
   padding: 0;
 }
 
-body h1 {
-  text-align: center;
-  margin: 8px;
-}
-
 #turtlecanvas {
-  background: #fff;
-  border: 1px solid red;
+  border: 1px solid gray;
 }
 
-#turtlecanvas,
-#imagecanvas {
-  margin: 20px auto;
-  display: block;
+h4 {
+  text-align: center;
 }

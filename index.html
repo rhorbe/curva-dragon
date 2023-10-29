@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -15,58 +15,99 @@
 
 <body>
   <div class="vh-100">
-    <nav class="navbar navbar-expand-lg bd-navbar sticky-top text-bg-primary" aria-label="Ninth navbar example">
-      <div class="container-xl">
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
         <a class="navbar-brand">Curva del dragón</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#modal" aria-current="page"
+              href="#">Ayuda</a>
+          </div>
+        </div>
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container my-5">
       <div class="row">
         <div class="col">
           <canvas id="turtlecanvas" width="700" height="700"></canvas>
           <canvas id="imagecanvas" width="700" height="700" style="display: none"></canvas>
         </div>
+
         <div class="col">
-          <form>
+          <div class="row">
+            <h4>Parámetros</h4>
+          </div>
+          <div class="row my-3">
+            <form autocomplete="off" novalidate>
 
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-x"></i>
-                <i class="fa-solid fa-arrow-right"></i></span>
-              <input type="text" class="form-control">
-            </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-x"></i>
+                  <i class="fa-solid fa-arrow-right"></i></span>
+                <input type="text" class="form-control">
+              </div>
 
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-y"></i>
-                <i class="fa-solid fa-arrow-right"></i></span>
-              <input type="text" class="form-control">
-            </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-y"></i>
+                  <i class="fa-solid fa-arrow-right"></i></span>
+                <input type="text" class="form-control">
+              </div>
 
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="input-iteraciones">
-                <img src="./images/agile.png" width="25" height="25">
-              </span>
-              <input type="number" class="form-control" placeholder="Iteraciones">
-            </div>
+              <div class="row">
+                <div class="col">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="input-iteraciones">
+                      <img src="./images/agile.png" width="25" height="25">
+                    </span>
+                    <input type="number" class="form-control" placeholder="Iteraciones">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                      <img src="./images/angle.png" width="25" height="25">
+                    </span>
+                    <input type="number" class="form-control" placeholder="Ángulo">
+                  </div>
+                </div>
+              </div>
 
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">
-                <img src="./images/angle.png" width="25" height="25">
-              </span>
-              <input type="number" class="form-control" placeholder="Ángulo inicial">
-            </div>
+              <button type="submit" class="btn btn-outline-secondary">Por defecto</button>
+              <button type="submit" class="btn btn-outline-primary">Ejecutar</button>
 
-            <button type="submit" class="btn btn-outline-primary">Ejecutar</button>
-
+          </div>
           </form>
+
         </div>
       </div>
     </div>
-
-
-
   </div>
 
+  <!-- Modal ayuda-->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalAyudaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h1 class="modal-title fs-5" id="modalAyudaLabel">Curva del Dragón</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Descripci&oacute;n</strong></p>
+          <p><strong>Intrucciones de uso</strong></p>
+          <p><strong>Grupo 3 - Integrantes</strong></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
