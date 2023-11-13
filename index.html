@@ -44,6 +44,11 @@
           </div>
           <div class="row my-3">
             <form autocomplete="off" novalidate>
+             
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Cadena inicial</span>
+                <input type="text" class="form-control">
+              </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-x"></i>
@@ -76,10 +81,19 @@
                 </div>
               </div>
 
+              <div class="row">                
+                <div class="input-group mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox"  id="verProcesoDibujo">
+                    <label class="form-check-label" for="verProcesoDibujo">
+                      Ver proceso de dibujo
+                    </label>
+                  </div>
+                </div>
+              </div>
+                
               <button type="submit" class="btn btn-outline-secondary">Por defecto</button>
-              <button type="submit" class="btn btn-outline-primary">Ejecutar</button>
-
-          </div>
+              <button type="submit" class="btn btn-outline-primary">Comenzar</button>          
           </form>
 
         </div>
