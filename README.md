@@ -1,6 +1,6 @@
 # Curva del Dragón
 * No terminales : X Y
-* Terminales : F + −
+* Terminales : F + -
 * Cadena Inicial : FX
 * Reglas de producción : (X → X+YF+), (Y → -FX-Y)
 * Angulo : 90°
