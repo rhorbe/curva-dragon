@@ -11,3 +11,7 @@ html {
 h4 {
   text-align: center;
 }
+
+.input-group-text{
+  width: 130px;
+}
