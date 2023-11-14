@@ -2,7 +2,7 @@
 * No terminales : X Y
 * Terminales : F + −
 * Cadena Inicial : FX
-* Reglas de producción : (X → X+YF+), (Y → −FX−Y)
+* Reglas de producción : (X → X+YF+), (Y → -FX-Y)
 * Angulo : 90°
 * Interpretación:
   - F: Dibujar Segmento
