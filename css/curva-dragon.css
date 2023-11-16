@@ -12,7 +12,15 @@ h4 {
   text-align: center;
 }
 
-.input-group-text{
+.input-group-text {
   width: 120px;
   height: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  width: 100%;
 }
