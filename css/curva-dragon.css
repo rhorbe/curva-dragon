@@ -4,15 +4,24 @@ html {
   padding: 0;
 }
 
+h4,
+h5 {
+  text-align: center;
+}
+
 #turtlecanvas {
   border: 1px solid #dee2e6;
 }
 
-h4 {
-  text-align: center;
-}
-
-.input-group-text{
+.input-group-text {
   width: 120px;
   height: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn-accion {
+  width: 100%;
 }
